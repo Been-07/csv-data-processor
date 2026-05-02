@@ -112,6 +112,6 @@ Invalid Price or Quantity Error processing row and continues
 Empty or missing columns Skips the row with warning
 
 
-##👨‍💻 Author
+👨‍💻 Author
 
 Benjamin Shojaee | [GitHub](https://github.com/Been-07) | [ORCID](https://orcid.org/0009-0005-2756-7140)

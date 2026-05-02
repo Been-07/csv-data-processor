@@ -99,12 +99,12 @@ CSV-Data-Processor/
 └── LICENSE             # MIT License
 ```
 
-##⚠️ Requirements
+:warning: Requirements
 
 · The CSV file must contain columns named Price and Quantity
 · Values in these columns must be numbers (integers)
 
-##🐛 Error Handling
+:bug: Error Handling
 
 Error Program Response
 File not found File not found, try again

@@ -13,15 +13,14 @@ A Python tool to read CSV files, calculate Price × Quantity = Total, and save t
 
 ## 🛠️ Technologies
 
-- Python 3
+- Python 3.14.2
 - CSV module (standard library)
 - OS module (standard library)
 
-## :package: Installation
+## 📦 Installation
 
 ```bash
 # No external packages needed - just Python 3
-python csv_processor.py
 ```
 
 :rocket: Usage

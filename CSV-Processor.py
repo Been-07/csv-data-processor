@@ -1,9 +1,9 @@
-
-
-
+# ======================================|
+# Author: Benjamin Shojaee              |
+# GitHub: https://github.com/Been-07    |
+# ORCID: 0009-0005-2756-7140            |
+# ======================================|
 import csv
-
-
 
 def formol(data,outfail='outfail.csv'):
         all_fild = []

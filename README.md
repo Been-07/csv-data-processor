@@ -24,7 +24,7 @@ A Python tool to read CSV files, calculate Price × Quantity = Total, and save t
 python csv_processor.py
 ```
 
-##🚀 Usage
+:rocket: Usage
 
 Step 1: Run the program
 
@@ -54,21 +54,22 @@ Step 4: Process another file (optional)
 Do you want to process another file? (Yes/No): Yes
 ```
 
-##📁 Sample Input (products.csv)
+:file_folder: Sample Input (products.csv)
 
 Price Quantity
 100 5
 200 3
 150 2
 
-##📁 Sample Output (outfail_1.csv)
+:file_folder: Sample Output (outfail_1.csv)
 
 Price Quantity total
 100 5 500
 200 3 600
 150 2 300
 
-##🎯 Example Session
+:dart: Example Session
+
 ```bash
 ==================================================================
                         CSV-Data-Processor
@@ -88,7 +89,7 @@ Do you want to process another file? (Yes/No): No
 bye bye
 ```
 
-##📁 Project Structure
+:file_folder: Project Structure
 
 ```
 CSV-Data-Processor/
@@ -110,7 +111,6 @@ Error Program Response
 File not found File not found, try again
 Invalid Price or Quantity Error processing row and continues
 Empty or missing columns Skips the row with warning
-
 
 👨‍💻 Author
 

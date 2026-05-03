@@ -96,6 +96,7 @@ CSV-Data-Processor/
 :warning: Requirements
 
 · The CSV file must contain columns named Price and Quantity
+
 · Values in these columns must be numbers (integers)
 
 :bug: Error Handling

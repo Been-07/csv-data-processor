@@ -55,17 +55,11 @@ Do you want to process another file? (Yes/No): Yes
 
 :file_folder: Sample Input (products.csv)
 
-Price|Quantity|
-100|5|
-200|3|
-150|2
+Price|Quantity|100|5|200|3|150|2
 
 :file_folder: Sample Output (outfail_1.csv)
 
-Price|Quantity|total|
-100|5|500|
-200|3|600
-150|2|300
+Price|Quantity|total|100|5|500|200|3|600|150|2|300
 
 :dart: Example Session
 

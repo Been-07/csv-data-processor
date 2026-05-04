@@ -15,7 +15,7 @@ A Python tool to read CSV files, calculate Price × Quantity = Total, and save t
 
 ## 🛠️ Technologies
 
-- Python 3.14
+- Python 3
 - CSV module (standard library)
 - OS module (standard library)
 

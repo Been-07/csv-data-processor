@@ -31,12 +31,13 @@ def formol(data,outfail):
                  print(f"Error processing row: {Error}")
                  continue
             
-        if all_fild:    
+        if all_fild:
+             name_outfail = outfail
             with open(outfail, mode='w', newline='') as outfail:
                 write = csv.DictWriter(outfail, fieldnames=all_fild[0])
                 write.writeheader()
                 write.writerows(all_fild)
-            print(f"Seve to {outfail}")
+            print(f"Seve to {name_outfail}")
             return True
         else:
             print("No data available")

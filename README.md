@@ -55,7 +55,7 @@ Step 4: View results
 ```bash
 --- Processing Session_1 ---
 File saved with name outfail_1.csv
-Seve to <_io.TextIOWrapper name='outfail_4.csv' mode='w' encoding='cp1252'>
+Seve to outfail_1.csv
 ```
 
 Step 5: Process another file (optional)
@@ -96,7 +96,7 @@ Please enter (exit=quit, 0=default): 0
 File saved with name outfail_1.csv
 Enter the name of the price column (e.g. price or unit_price): Price
 Enter the name of the number column (e.g. quantity or count): Quantity
-Seve to <_io.TextIOWrapper name='outfail_1.csv' mode='w' encoding='cp1252'>
+Seve to outfail_1.csv
 
 Do you want to process another file? (Yes/No): No
 bye bye

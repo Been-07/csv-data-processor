@@ -32,7 +32,7 @@ def formol(data,outfail):
                  continue
             
         if all_fild:
-             name_outfail = outfail
+            name_outfail = outfail
             with open(outfail, mode='w', newline='') as outfail:
                 write = csv.DictWriter(outfail, fieldnames=all_fild[0])
                 write.writeheader()

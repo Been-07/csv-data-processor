@@ -5,6 +5,8 @@ A Python tool to read CSV files, calculate Price × Quantity = Total, and save t
 ## ✨ Features
 
 - ✅ Read CSV files with Price and Quantity columns
+- ✅ Auto-detect columns – Shows available columns in your CSV file
+- ✅ Custom column selection – Choose which columns are Price and Quantity
 - ✅ Calculate Total = Price × Quantity automatically
 - ✅ Auto-generate output filenames (outfail_1.csv, outfail_2.csv, ...)
 - ✅ Process multiple files in one session
@@ -37,29 +39,45 @@ Step 2: Enter the file path
 Enter the address of the desired file, otherwise enter 0 to use 
 the default file (products.csv) or type exit to exit the program
 
-Please enter (exit=quit, 0=default): 0
+Please enter (exit=exit, 0=default file): 0
 ```
 
-Step 3: View results
+Step 3: Select columns
+
+After loading the file, the program shows all available columns:
+```bash
+📋 Available columns: ['Product', 'Price', 'Quantity']
+Enter the name of the price column: Price
+Enter the name of the quantity column: Quantity
+```
+Step 4: View results
 
 ```bash
 --- Processing Session_1 ---
 File saved with name outfail_1.csv
-✅ Saved to outfail_1.csv
+Seve to <_io.TextIOWrapper name='outfail_4.csv' mode='w' encoding='cp1252'>
 ```
 
-Step 4: Process another file (optional)
+Step 5: Process another file (optional)
 ```bash
 Do you want to process another file? (Yes/No): Yes
 ```
 
 :file_folder: Sample Input (products.csv)
 
-Price|Quantity|100|5|200|3|150|2
+| Price | Quantity |
+| :--- | :--- |
+| 100 | 5 |
+| 200 | 3 |
+| 150 | 2 |
 
 :file_folder: Sample Output (outfail_1.csv)
 
-Price|Quantity|total|100|5|500|200|3|600|150|2|300
+| Price | Quantity | Total|
+| :--- | :--- | :--- |
+| 100 | 5 | 500 |
+| 200 | 3 | 600 |
+| 150 | 2 | 300 |
 
 :dart: Example Session
 
@@ -68,15 +86,17 @@ Price|Quantity|total|100|5|500|200|3|600|150|2|300
                         CSV-Data-Processor
                Calculates Price × Quantity = Total
 ==================================================================
---- Processing Session_1 ---
-
+                   --- Processing Session_1 ---
+==================================================================
 Enter the address of the desired file, otherwise enter 0 to use 
 the default file (products.csv) or type exit to exit the program
-
+==================================================================
 Please enter (exit=quit, 0=default): 0
 
 File saved with name outfail_1.csv
-✅ Saved to outfail_1.csv
+Enter the name of the price column (e.g. price or unit_price): Price
+Enter the name of the number column (e.g. quantity or count): Quantity
+Seve to <_io.TextIOWrapper name='outfail_1.csv' mode='w' encoding='cp1252'>
 
 Do you want to process another file? (Yes/No): No
 bye bye
@@ -95,9 +115,9 @@ CSV-Data-Processor/
 
 :warning: Requirements
 
-· The CSV file must contain columns named Price and Quantity
+· The CSV file must contain columns with numeric values (you can choose any column names)
 
-· Values in these columns must be numbers (integers)
+· Values in selected columns must be numbers (integers)
 
 :bug: Error Handling
 

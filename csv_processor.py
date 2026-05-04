@@ -41,7 +41,7 @@ def formol(data,outfail):
 def get_failname():
     while True:
         print("=" * 130)
-        print("Enter the address of the desired file, otherwise enter 0 to use the default file (products.csv) or type exit to exit the program")
+        print("Enter the address of the desired file, otherwise enter 0 to use the default file (products.csv) or type exit to exit the program".center(130))
         print("=" * 130)
         address_user = input("\nPlease enter the address (for exit: exit, for default address: 0): ")
         if address_user.upper() == "EXIT":
@@ -58,12 +58,12 @@ def get_failname():
                         
 def main():
     print("=" * 130)
-    print("                                             CSV-Data-Processor")
-    print("                                             Calculates Price × Quantity = Total")
+    print("CSV-Data-Processor".center(130))
+    print("Calculates Price × Quantity = Total".center(130))
     print("=" * 130)
     counter = 1
     while True:
-        print(f"--- Processing Session_{counter} ---")
+        print(f"--- Processing Session_{counter} ---".center(130))
         deta = get_failname()
         if deta is None:
             print("bye bye")

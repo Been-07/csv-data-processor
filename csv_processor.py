@@ -25,7 +25,7 @@ def formol(data,outfail):
 
                 Price = int(lines[value_price])
                 Quantity = int(lines[value_quantity])
-                lines['total'] = Price * Quantity
+                lines['Total'] = Price * Quantity
                 all_fild.append(lines)
             except(ValueError,KeyError) as Error:
                  print(f"Error processing row: {Error}")

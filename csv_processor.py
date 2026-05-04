@@ -17,10 +17,14 @@ def get_next_outfail(base = "outfail"):
 def formol(data,outfail):
         all_fild = []
         rieder = csv.DictReader(data)
+        print(rieder.fieldnames)
+        value_price = input("Enter the name of the price column (e.g. price or unit_price): ")
+        value_quantity = input("Enter the name of the number column (e.g. quantity or count): ")
         for lines in rieder:
             try:
-                Price = int(lines['Price'])
-                Quantity = int(lines['Quantity'])
+
+                Price = int(lines[value_price])
+                Quantity = int(lines[value_quantity])
                 lines['total'] = Price * Quantity
                 all_fild.append(lines)
             except(ValueError,KeyError) as Error:
@@ -43,8 +47,8 @@ def get_failname():
         print("=" * 130)
         print("Enter the address of the desired file, otherwise enter 0 to use the default file (products.csv) or type exit to exit the program".center(130))
         print("=" * 130)
-        address_user = input("\nPlease enter the address (for exit: exit, for default address: 0): ")
-        if address_user.upper() == "EXIT":
+        address_user = input("\nPlease enter the address (for exit: exit, for default address: 0): ").strip().capitalize()
+        if address_user == "Exit":
             return None
         if address_user == "0":
             file_name = "products.csv"
@@ -77,8 +81,8 @@ def main():
             print(f"Error File: {error}")
         counter += 1
         print("\n" + "-" * 100)
-        again = input("Do you want to process another file? (Yes/No): ").strip().upper()
-        if again != "YES":
+        again = input("Do you want to process another file? (Yes/No): ").strip().lower()
+        if again != "yes":
             print("bye bye")
             break
 
